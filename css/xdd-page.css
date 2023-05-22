@@ -220,7 +220,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding-left: 114px;
+    padding-left: 80px;
+    padding-top: 56.6px;
     width: 460px;
 }
 .section-2 .section-2-2 .ques-mark1 > div h3,h5{
@@ -231,6 +232,7 @@ header {
     flex-direction: row;
     align-items: center;
     margin-left: 114px;
+    padding-top: 56.6px;
 }
 .section-2 .section-2-3{
     width: 1044px;
@@ -238,23 +240,24 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 290px;
+    padding-left: 230px;
 }
 .section-2 .section-2-3 > div{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     width: 460px;
 }
 .section-2 .section-2-3 .ques-mark2{
     margin-left: 114px;
     background-image: url(../img/section2-bg2.png);
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: center top;
     background-size: 135.33px 176.67px;
 }
 .section-2 .section-2-3 .ques-mark2 > div{
     width: 460px;
+    padding-top: 41.3px;
 }
 .section-2 .section-2-3 .ques-mark2 > div h3,h5{
     text-align: left;
@@ -263,6 +266,61 @@ header {
     margin-top: 17px;
 }
 
+.section-3{
+    width: 100vw;
+    height: 1189px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFFCF5;
+    background-image: url(../img/section3-bg1.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 349.33px 265.33px;
+}
+.section-3 .section-3-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-3 .section-3-1 > div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 59px;
+    width: 816.66px;
+}
+.section-3 .section-3-1 > div:nth-child(2) > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-3 .section-3-1 > div:nth-child(2) > div > h5{
+    width: 230.66px;
+    text-align: center;
+}
+.section-3 .section-3-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 104px;
+}
+.section-3 .section-3-2 > div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 470px;
+    margin-top: 64px;
+}
+.section-3 .section-3-2 > div:nth-child(2) > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /*footer*/
 .footer{
     width: 100vw;
