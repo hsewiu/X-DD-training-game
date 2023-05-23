@@ -82,7 +82,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+::selection {
+	background: #F7C765;
+}
 /* able to click*/
 #logo-area{
     cursor: pointer;
