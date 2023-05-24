@@ -82,6 +82,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 ::selection {
 	background: #F7C765;
 }
@@ -94,9 +99,11 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-bottom:1px solid transparent;
 }
 #contact-us{
     cursor: pointer;
+    border-bottom:1px solid transparent;
 }
 #language-change:hover, #contact-us:hover{
     border-bottom:1px solid #F6C765;
@@ -159,7 +166,7 @@ header {
     width: 552px;
     height: 247.55px;
 }
-.section-title > div > div > div > button{
+.section-title > div > div > div > a{
     width: 300px;
     height: 64px;
     background: #822109;
@@ -178,11 +185,12 @@ header {
     align-items: center;
     justify-content: center;
     margin-top: 97px;
+    text-decoration: none;
 }
-.section-title > div > div > div > button:hover{
+.section-title > div > div > div > a:hover{
     background: #AF4E36;
 }
-.section-title > div > div > div > button > svg{
+.section-title > div > div > div > a > svg{
     width: 25px;
     height: 25px;
     margin-right: 10px;
