@@ -950,6 +950,10 @@
     html{
         scroll-behavior: smooth;
     }
+
+    .mobile{
+        display: none;
+    }
     
     ::selection {
         background: #F7C765;
