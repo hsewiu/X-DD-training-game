@@ -963,6 +963,7 @@
         cursor: pointer;
     }
     #language-change{
+        visibility: hidden;
         cursor: pointer;
         display: flex;
         flex-direction: row;
