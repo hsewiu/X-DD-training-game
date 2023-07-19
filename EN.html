@@ -5,9 +5,31 @@
     <title>X-DD Touch｜兒童視知覺遊戲訓練系統</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="css/xdd-page.css">
+    <link rel="stylesheet" href="css/xdd-page-EN.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            const closeMenuBtn = document.getElementById("close-mobile-language-change");
+            const menuContent = document.getElementById("mobile-language-content");
+            const MenuBtn = document.getElementById("mobile-language-change");
+
+            MenuBtn.addEventListener("mouseover", (event) => {
+                menuContent.style.display="block";
+            });
+            MenuBtn.addEventListener("click", (event) => {
+                menuContent.style.display="block";
+            });
+
+            MenuBtn.addEventListener("mouseout", (event) => {
+                menuContent.style.display="none";
+            });
+
+            closeMenuBtn.addEventListener("click", (event) => {
+                menuContent.style.display="none";
+            });
+        }
+    </script>
 <body>
     <header>
         <div class="header-content">
@@ -15,16 +37,6 @@
                 <img src="img/mobile-menu.svg" width="32" heigh="32">
                 <div class="mobile-language-content" id="mobile-language-content">
                     <img src="img/mobile-menu-close.svg" width="32" heigh="32" id="close-mobile-language-change">
-                    <script type="text/javascript">
-                        const closeMenuBtn = document.getElementById("close-mobile-language-change");
-                        const menuContent = document.getElementById("mobile-language-content");
-                
-                        closeMenuBtn.addEventListener("click", (event) => {
-                            if(menuContent.style.display==="block"){
-                                menuContent.style.display="none";
-                            }
-                        });
-                    </script>
                     <div>
                         <span>Language</span>
                         <a href="index.html">繁體中文</a>
@@ -80,7 +92,7 @@
     <div class="section-2">
         <div>
             <div class="section-2-title">
-                <h2>There is a rising trend of developmental delays in modern children!！！</h2>
+                <h2>There is a rising trend of developmental delays in modern children!</h2>
                 <img src="img/icon-1.svg" width="58.76" heigh="54.53" alt="驚嘆號">
             </div>
             <div class="section-2-2">
@@ -96,7 +108,7 @@
             </div>
             <div class="section-2-3">
                 <div>
-                    <div>
+                    <div class="pc">
                         <img src="img/section2-img2.png" width="374" heigh="133.98" alt="訓練遊戲">
                     </div>
                     <div class="ques-mark2">
@@ -105,8 +117,8 @@
                             <h5>The system will lead children to easily achieve their visual and perceptual training goals through the plot and level design. No need to go to the hospital, you can do it at home. And through the results of the game record, the doctor or parents can better understand the child's progress or learning situation.</h5>
                         </div>
                     </div>
-                    <div>
-                        <img src="img/section2-img2.png" width="374" heigh="133.98" alt="訓練遊戲">
+                    <div class="mobile">
+                        <img src="img/section2-img2-EN.png" width="374" heigh="133.98" alt="訓練遊戲">
                     </div>
                 </div>
             </div>
@@ -246,7 +258,7 @@
                 <div>
                     <h2>Usability scores</h2>
                     <div>
-                        <span>86</span><span>分</span>
+                        <span>86</span>
                     </div>
                 </div>
                 <div>
@@ -272,14 +284,14 @@
             <img src="img/section6-title.png" width="613.43" heigh="111.66" alt="為什麼我們要做這個">
         </div>
         <div>
-            <h2>Better understanding of<br>your child's abilities</h2>
+            <h4>Better understanding of<br>your child's abilities</h4>
         </div>
         <div>
             <div>
-                <h2>Training for children<br>to have fun</h2>
+                <h4>Training for children<br>to have fun</h4>
             </div>
             <div>
-                <h2>Optimized design<br>after testing</h2>
+                <h4>Optimized design<br>after testing</h4>
             </div>
         </div>
     </div>
@@ -330,14 +342,14 @@
         <div>
             <div>
                 <img src="img/section8-icon1.png" width="107" heigh="107" alt="工程師">
-                <h3>I’m a designer/engineer, I can...</h3>
+                <h4>I’m a designer/engineer, I can...</h4>
                 <a href="https://forms.gle/1AEMH9eUdV8MWcsTA" id="go-download-section"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
                     </svg>Download code</a>
             </div>
             <div>
                 <img src="img/section8-icon2.png" width="107" heigh="107" alt="醫師">
-                <h3>I’m a doctor/teacher, I can...</h3>
+                <h4>I’m a doctor/teacher, I can...</h4>
                 <a href="https://forms.gle/MRAn2YZ6ZwehTDP59" id="go-download-section"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                     <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
                     </svg>Provide suggestions</a>
