@@ -108,6 +108,9 @@
     #language-change:hover, #contact-us:hover{
         border-bottom:1px solid #F6C765;
     }
+    .pc{
+        display: none;
+    }
     /* header */
     header {
         width : 100%;
@@ -120,6 +123,7 @@
         top: 0px;
         background: #FFFFFF;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        z-index: 8;
     }
     #mobile-language-change{
         position: absolute;
@@ -221,10 +225,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image: url(../img/title-bg-boy.png), url(../img/title-bg-girl.png);
-        background-repeat: no-repeat;
-        background-position: left bottom, right bottom;
-        background-size: 143px 106px, 159px 112px;
     }
     .section-title > div > div{
         width: 256.43px;
@@ -232,17 +232,61 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         margin-top: 36px;
     }
-    .section-title > div > div > div > img{
+    .section-title > div > div > div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-title > div > div > div:nth-child(4){
+        width: 312px;
+        height: 122px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    @keyframes KidspopB-M{
+        0% {bottom: -5px;}
+        25% {bottom: 0px;}
+        50% {bottom: 12px;}
+        75% {bottom: -5px;}
+        100% {bottom: -5px;}
+    }
+    @keyframes KidspopG-M{
+        0% {bottom: -5px;}
+        25% {bottom: -5px;}
+        50% {bottom: 0px;}
+        75% {bottom: 12px;}
+        100% {bottom: -5px;}
+    }
+    #title-boy-mobile{
+        width: 143px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        animation: KidspopB-M 3s infinite;
+        z-index: 1;
+    }
+    #title-girl-mobile{
+        width: 159px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        animation: KidspopG-M 3s infinite;
+        z-index: 1;
+    }
+    .section-title > div > div > div:nth-child(2) img{
         width: 256.43px;
         height: 115px;
     }
-    .section-title > div > div > div > h4{
+    .section-title > div > div > div:nth-child(2) h4{
         margin-top: 12px;
     }
-    .section-title > div > div > div > a{
+    .section-title > div > div > div:nth-child(2) a{
         width: 200px;
         height: 32px;
         background: #822109;
@@ -263,10 +307,10 @@
         margin-top: 18px;
         text-decoration: none;
     }
-    .section-title > div > div > div > a:hover{
+    .section-title > div > div > div:nth-child(2) a:hover{
         background: #AF4E36;
     }
-    .section-title > div > div > div > a > svg{
+    .section-title > div > div > div:nth-child(2) a > svg{
         width: 21px;
         height: 21px;
         margin-right: 10px;
@@ -279,6 +323,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+        z-index: 3;
     }
     .section-2 > div {
         display: flex;
@@ -374,7 +420,7 @@
     }
     .section-2 .section-2-3 .ques-mark2 > div h3,h5{
         width: 237px;
-        text-align: center;
+        text-align: left;
     }
     .section-2 h5{
         margin-top: 17px;
@@ -1048,6 +1094,9 @@
     .language-change-drop:hover .language-content{
         display: block;
     }
+    .mobile{
+        display: none;
+    }
     /* header */
     header {
         width : 100vw;
@@ -1060,6 +1109,7 @@
         top: 0px;
         background: #FFFFFF;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        z-index: 8;
     }
     .header-content{
         width: 92.8vw;
@@ -1130,22 +1180,61 @@
     }
     .section-title > div{
         width: 1280px;
-        background-image: url(../img/title-bg-boy.png), url(../img/title-bg-girl.png), url(../img/title-bg-only.png);
+        background-image: url(../img/title-bg-only.png);
         background-repeat: no-repeat;
-        background-position: left bottom, right bottom, center bottom;
-        background-size: 301px 225px, 335px 238px, 1212px 700px;
-        animation: Kidspop 5s infinite;
-    }
-    @keyframes Kidspop{
-        0% {top: 0px;}
-        25% {top: -50px;}
-        50% {top:-75px;}
-        100% {top: 0px;}
+        background-position: center bottom;
+        background-size: 1212px 700px;
     }
     .section-title h4{
+        margin-top: 12px;
         width: 628px;
     }
     .section-title > div > div{
+        width: 1280px;
+        height: 698px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    @keyframes KidspopB{
+        0% {bottom: -30px;}
+        25% {bottom: -10px;}
+        50% {bottom: 0px;}
+        75% {bottom: -30px;}
+        100% {bottom: -30px;}
+    }
+    @keyframes KidspopG{
+        0% {bottom: -30px;}
+        25% {bottom: -30px;}
+        50% {bottom: -10px;}
+        75% {bottom: 0px;}
+        100% {bottom: -30px;}
+    }
+    
+    .section-title > div > div #title-boy{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        bottom: 0px;
+        height: 698px;
+        width: 301px;
+        animation: KidspopB 3s infinite;
+        z-index: 1;
+    }
+    .section-title > div > div #title-girl{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        bottom: 0px;
+        height: 698px;
+        width: 335px;
+        animation: KidspopG 3s infinite;
+        z-index: 1;
+    }
+    .section-title > div > div > div:nth-child(2){
         width: 1280px;
         height: 643.3px;
         display: flex;
@@ -1153,11 +1242,11 @@
         align-items: center;
         justify-content: center;
     }
-    .section-title > div > div > div > img{
+    .section-title > div > div > div:nth-child(2) img{
         width: 552px;
         height: 247.55px;
     }
-    .section-title > div > div > div > a{
+    .section-title > div > div > div:nth-child(2) a{
         width: 300px;
         height: 64px;
         background: #822109;
@@ -1175,25 +1264,27 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin-top: 97px;
+        margin-top: 73px;
         text-decoration: none;
     }
-    .section-title > div > div > div > a:hover{
+    .section-title > div > div > div:nth-child(2) a:hover{
         background: #AF4E36;
     }
-    .section-title > div > div > div > a > svg{
+    .section-title > div > div > div:nth-child(2) a > svg{
         width: 25px;
         height: 25px;
         margin-right: 10px;
     }
     
     .section-2{
+        position: relative;
         width: 100vw;
         height: 821.33px;
         background: #F7C765;
         display: flex;
         flex-direction: column;
         align-items: center;
+        z-index: 3;
     }
     .section-2 > div {
         display: flex;
